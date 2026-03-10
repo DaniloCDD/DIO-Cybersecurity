@@ -11,12 +11,12 @@ Utilizei a biblioteca `cryptography` (módulo Fernet) do Python para gerar uma c
 
 Para demonstrar o impacto, criei alguns arquivos com dados fictícios (como senhas e CPFs). Veja como eles eram lidos antes de rodar o script:
 
-![Arquivos antes do ataque](antes.png)
+![Arquivos antes do ataque](antes.jpeg)
 *Arquivos originais e legíveis na pasta de testes.*
 
 Logo após a execução do código, o conteúdo original é totalmente substituído por um texto cifrado. Sem a chave gerada pelo programa, é impossível recuperar a informação:
 
-![Arquivos criptografados](depois.png)
+![Arquivos criptografados](depois.jpeg)
 *Arquivos bloqueados pela criptografia e a nota de resgate gerada.*
 
 ## Como se defender?
