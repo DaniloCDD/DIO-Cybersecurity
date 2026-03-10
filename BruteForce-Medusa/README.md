@@ -37,3 +37,9 @@ medusa -h 192.168.56.101 -U smb_users.txt -P senhas_spray.txt -M smbnt -t 2 -T 5
 
 ![Sucesso no Medusa](medusa.jpg)
 *Medusa encontrando a senha correta no serviço SMB.*
+
+## Como prevenir?
+Na prática, para evitar que um ataque simples como esse funcione, bastam algumas configurações básicas:
+1. **Não usar senhas padrão:** Alterar imediatamente qualquer credencial que venha de fábrica (como `admin/admin`).
+2. **Bloqueio por falhas:** Usar ferramentas como o Fail2Ban para bloquear temporariamente o IP de quem errar a senha muitas vezes seguidas.
+3. **Desativar o que não usa:** Se o servidor não precisa de FTP, a porta 21 nem deveria estar aberta.
